@@ -1,10 +1,10 @@
 # Ursus Atom
 
-A library for manipulating Urbit atoms and auras.
+A library for manipulating Urbit [atoms and auras](https://urbit.org/docs/tutorials/hoon/atoms-auras-and-simple-cell-types/).
 
 ## Usage
 
-Ursus contains a submodule for working with [atoms and auras](https://urbit.org/docs/tutorials/hoon/atoms-auras-and-simple-cell-types/), with support for the urbit phonetic base:
+Ursus Atom grants support for the urbit phonetic base, useful for representing Azimuth points ('ships'):
 
 ```swift
 let ship = try! PatP(string: "~lanrus-rinfep")
