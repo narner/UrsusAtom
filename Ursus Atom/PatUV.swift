@@ -16,7 +16,7 @@ public struct PatUV: Aura {
         return "0v" + String(self, radix: 32, chunk: 5)
     }
 
-    internal init(_ atom: BigUInt) {
+    internal init(atom: BigUInt) {
         self.atom = atom
     }
     

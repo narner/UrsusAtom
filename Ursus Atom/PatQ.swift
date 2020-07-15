@@ -16,7 +16,7 @@ public struct PatQ: Aura {
         return PhoneticBaseParser.render(syllables: syllables, spacing: .shortSpacing)
     }
 
-    public init(_ atom: BigUInt) {
+    public init(atom: BigUInt) {
         self.atom = atom
     }
     
