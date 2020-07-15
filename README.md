@@ -21,7 +21,7 @@ Current implementations:
 
 ## Installation
 
-Ursus Atom can be installed using Cocoapods by adding the following lines to your podfile:
+Ursus Atom can be installed using Cocoapods by adding the following line to your podfile:
 
 ```ruby
 pod 'UrsusAtom', '~> 1.0'
