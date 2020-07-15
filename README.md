@@ -33,7 +33,7 @@ I can probably help set up Carthage or Swift Package Manager support if you need
 
 Things that would make this codebase nicer:
 
-- [ ] Additional atom and aura types.
+- [ ] Additional atom and aura types; the date format would be a good candidate.
 - [ ] Better documentation/examples.
 
 ## Other utilities
