@@ -8,7 +8,7 @@
 import Foundation
 import BigInt
 
-public struct PatP: Aura, Codable, Hashable {
+public struct PatP: Aura, Codable {
     
     internal var atom: BigUInt
 
