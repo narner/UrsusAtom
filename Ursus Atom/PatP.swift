@@ -8,12 +8,20 @@
 import Foundation
 import BigInt
 
-public struct PatP: Aura, Codable {
+public struct PatP: Aura {
     
-    internal var atom: BigUInt
+    public var atom: BigUInt
+    
+    public var string: String {
+        return PhoneticBaseParser.render(syllables: syllables, spacing: .longSpacing)
+    }
 
     internal init(_ atom: BigUInt) {
         self.atom = atom
+    }
+    
+    public init(string: String) throws {
+        self.init(syllables: try PhoneticBaseParser.parse(string))
     }
     
 }
@@ -82,30 +90,6 @@ extension PatP {
     
 }
 
-extension PatP {
-    
-    public init(string: String) throws {
-        self.init(syllables: try PhoneticBaseParser.parse(string))
-    }
-    
-    public var string: String {
-        return PhoneticBaseParser.render(syllables: syllables, spacing: .longSpacing)
-    }
-    
-}
-
-extension PatP: RawRepresentable {
-    
-    public init?(rawValue: String) {
-        try? self.init(string: rawValue)
-    }
-    
-    public var rawValue: String {
-        return string
-    }
-    
-}
-
 extension PatP: CustomStringConvertible {
     
     public var description: String {
@@ -119,25 +103,5 @@ extension PatP: CustomDebugStringConvertible {
     public var debugDescription: String {
         return "~" + string
     }
-    
-}
-
-extension PatP: ExpressibleByStringLiteral {
-    
-    public init(unicodeScalarLiteral value: String.ExtendedGraphemeClusterLiteralType) {
-        try! self.init(string: String(unicodeScalarLiteral: value))
-    }
-    
-    public init(extendedGraphemeClusterLiteral value: String) {
-        try! self.init(string: String(extendedGraphemeClusterLiteral: value))
-    }
-
-    public init(stringLiteral value: StringLiteralType) {
-        try! self.init(string: String(stringLiteral: value))
-    }
-    
-}
-
-extension PatP: Hashable {
     
 }

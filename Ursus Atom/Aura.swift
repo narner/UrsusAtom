@@ -7,13 +7,17 @@
 
 import Foundation
 
-internal protocol Aura: UnsignedInteger {
+internal protocol Aura: UnsignedInteger, RawRepresentable, Codable, ExpressibleByStringLiteral {
     
     associatedtype Atom: UnsignedInteger
     
     var atom: Atom { get }
+    
+    var string: String { get }
 
     init(_ atom: Atom)
+    
+    init(string: String) throws
     
 }
 
@@ -27,8 +31,36 @@ extension Aura {
 
 extension Aura {
     
+    public init?(rawValue: String) {
+        try? self.init(string: rawValue)
+    }
+    
+    public var rawValue: String {
+        return string
+    }
+    
+}
+
+extension Aura {
+    
     public init(integerLiteral value: Atom.IntegerLiteralType) {
         self.init(Atom(integerLiteral: value))
+    }
+    
+}
+
+extension Aura {
+    
+    public init(unicodeScalarLiteral value: String.ExtendedGraphemeClusterLiteralType) {
+        try! self.init(string: String(unicodeScalarLiteral: value))
+    }
+    
+    public init(extendedGraphemeClusterLiteral value: String) {
+        try! self.init(string: String(extendedGraphemeClusterLiteral: value))
+    }
+
+    public init(stringLiteral value: String) {
+        try! self.init(string: String(stringLiteral: value))
     }
     
 }
