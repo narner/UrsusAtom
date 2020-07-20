@@ -24,7 +24,7 @@ Current implementations:
 Ursus Atom can be installed using Cocoapods by adding the following line to your podfile:
 
 ```ruby
-pod 'UrsusAtom', '~> 1.0'
+pod 'UrsusAtom', '~> 1.1'
 ```
 
 I can probably help set up Carthage or Swift Package Manager support if you need it.
@@ -34,7 +34,6 @@ I can probably help set up Carthage or Swift Package Manager support if you need
 Things that would make this codebase nicer:
 
 - [ ] Additional atom and aura types; the date format would be a good candidate.
-- [ ] `PatP` and `PatQ` override `CustomDebugStringConvertible` to return prefixed string representations; this is a little weird.
 - [ ] Unit tests for the cryptographic methods in [`PhoneticBaseObfuscator`](Ursus%20Phonetic%20Base/PhoneticBaseObfuscator.swift) (ported from [urbit-hob](https://github.com/urbit/urbit-hob/blob/master/lib/Urbit/Ob/Ob.hs)).
 - [ ] Better documentation/examples.
 

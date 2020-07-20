@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = "UrsusAtom"
-  s.version = "1.0.1"
+  s.version = "1.1.0"
   s.summary = "A library for manipulating Urbit atoms and auras."
   s.homepage = "https://github.com/dclelland/UrsusAtom"
   s.license = { type: 'MIT' }
   s.author = { "Daniel Clelland" => "daniel.clelland@gmail.com" }
-  s.source = { git: "https://github.com/dclelland/UrsusAtom.git", tag: "1.0.1" }
+  s.source = { git: "https://github.com/dclelland/UrsusAtom.git", tag: "1.1.0" }
   s.swift_versions = ['5.1', '5.2']
   
   s.ios.deployment_target = '13.0'

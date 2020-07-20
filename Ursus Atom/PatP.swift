@@ -13,15 +13,74 @@ public struct PatP: Aura {
     public var atom: BigUInt
     
     public var string: String {
-        return PhoneticBaseParser.render(syllables: syllables, spacing: .long())
+        return "~" + PhoneticBaseParser.render(syllables: syllables, spacing: .long())
+    }
+    
+    public var abbreviatedString: String {
+        switch title {
+        case .galaxy, .star, .planet:
+            return "~" + PhoneticBaseParser.render(syllables: syllables, spacing: .long())
+        case .moon:
+            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "^"))
+        case .comet:
+            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "_"))
+        }
     }
 
-    internal init(atom: BigUInt) {
+    public init(atom: BigUInt) {
         self.atom = atom
     }
     
     public init(string: String) throws {
         self.init(syllables: try PhoneticBaseParser.parse(string))
+    }
+    
+}
+
+extension PatP {
+    
+    public var encodableString: String {
+        return String(string.dropFirst(1))
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(encodableString)
+    }
+    
+}
+
+extension PatP {
+    
+    public init(syllables: [PhoneticBaseSyllable]) {
+        let bytes = syllables.map(\.byte)
+        let deobfuscatedAtom = PhoneticBaseObfuscator.deobfuscate(BigUInt(Data(bytes)))
+        self.init(deobfuscatedAtom)
+    }
+    
+    public var syllables: [PhoneticBaseSyllable] {
+        let obfuscatedAtom = PhoneticBaseObfuscator.obfuscate(atom)
+        let bytes = obfuscatedAtom.serialize()
+        let syllables: [PhoneticBaseSyllable] = bytes.reversed().enumerated().reduce([]) { result, element in
+            let (index, byte) = element
+            switch index.parity {
+            case .even:
+                return [.suffix(byte: byte)] + result
+            case .odd:
+                return [.prefix(byte: byte)] + result
+            }
+        }
+        
+        switch syllables.count {
+        case 0:
+            return [.suffix(byte: 0)]
+        case 1:
+            return syllables
+        case 2... where syllables.count.isOdd:
+            return [.prefix(byte: 0)] + syllables
+        default:
+            return syllables
+        }
     }
     
 }
@@ -65,68 +124,6 @@ extension PatP {
             return self % 0x100000000
         case .comet:
             return self % 0x10000
-        }
-    }
-    
-}
-
-extension PatP {
-    
-    public init(syllables: [PhoneticBaseSyllable]) {
-        let bytes = syllables.map(\.byte)
-        let deobfuscatedAtom = PhoneticBaseObfuscator.deobfuscate(BigUInt(Data(bytes)))
-        self.init(deobfuscatedAtom)
-    }
-    
-    public var syllables: [PhoneticBaseSyllable] {
-        let obfuscatedAtom = PhoneticBaseObfuscator.obfuscate(atom)
-        let bytes = obfuscatedAtom.serialize()
-        let syllables: [PhoneticBaseSyllable] = bytes.reversed().enumerated().reduce([]) { result, element in
-            let (index, byte) = element
-            switch index.parity {
-            case .even:
-                return [.suffix(byte: byte)] + result
-            case .odd:
-                return [.prefix(byte: byte)] + result
-            }
-        }
-        
-        switch syllables.count {
-        case 0:
-            return [.suffix(byte: 0)]
-        case 1:
-            return syllables
-        case 2... where syllables.count.isOdd:
-            return [.prefix(byte: 0)] + syllables
-        default:
-            return syllables
-        }
-    }
-    
-}
-
-extension PatP: CustomStringConvertible {
-    
-    public var description: String {
-        return string
-    }
-    
-}
-
-extension PatP: CustomDebugStringConvertible {
-    
-    public var debugDescription: String {
-        return "~" + string
-    }
-    
-    public var abbreviatedDescription: String {
-        switch title {
-        case .galaxy, .star, .planet:
-            return "~" + string
-        case .moon:
-            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "^"))
-        case .comet:
-            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "_"))
         }
     }
     
