@@ -13,7 +13,7 @@ public struct PatP: Aura {
     public var atom: BigUInt
     
     public var string: String {
-        return PhoneticBaseParser.render(syllables: syllables, spacing: .longSpacing)
+        return PhoneticBaseParser.render(syllables: syllables, spacing: .long())
     }
 
     internal init(atom: BigUInt) {
@@ -50,6 +50,21 @@ extension PatP {
             return .moon
         default:
             return .comet
+        }
+    }
+    
+    public var parent: PatP {
+        switch title {
+        case .galaxy:
+            return self
+        case .star:
+            return self % 0x100
+        case .planet:
+            return self % 0x10000
+        case .moon:
+            return self % 0x100000000
+        case .comet:
+            return self % 0x10000
         }
     }
     
@@ -102,6 +117,17 @@ extension PatP: CustomDebugStringConvertible {
     
     public var debugDescription: String {
         return "~" + string
+    }
+    
+    public var abbreviatedDescription: String {
+        switch title {
+        case .galaxy, .star, .planet:
+            return "~" + string
+        case .moon:
+            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "^"))
+        case .comet:
+            return "~" + PhoneticBaseParser.render(syllables: syllables.prefix(2) + syllables.suffix(2), spacing: .long(separator: "_"))
+        }
     }
     
 }

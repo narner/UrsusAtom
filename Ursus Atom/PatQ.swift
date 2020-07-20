@@ -13,7 +13,7 @@ public struct PatQ: Aura {
     public var atom: BigUInt
     
     public var string: String {
-        return PhoneticBaseParser.render(syllables: syllables, spacing: .shortSpacing)
+        return PhoneticBaseParser.render(syllables: syllables, spacing: .short())
     }
 
     public init(atom: BigUInt) {
