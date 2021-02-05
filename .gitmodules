@@ -1,0 +1,9 @@
+[submodule "Submodules/BigInt"]
+	path = Submodules/BigInt
+	url = git@github.com:attaswift/BigInt.git
+[submodule "Submodules/MurmurHash-Swift"]
+	path = Submodules/MurmurHash-Swift
+	url = git@github.com:daisuke-t-jp/MurmurHash-Swift.git
+[submodule "Submodules/Parity"]
+	path = Submodules/Parity
+	url = git@github.com:dclelland/Parity.git

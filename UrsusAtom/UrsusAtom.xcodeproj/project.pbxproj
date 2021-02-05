@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		510CA0AE25CE00AC0041E3DA /* UrsusAtom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */; };
+		510CA0B325CE00AC0041E3DA /* UrsusAtomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA0B225CE00AC0041E3DA /* UrsusAtomTests.swift */; };
+		510CA0B525CE00AC0041E3DA /* UrsusAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = 510CA0A725CE00AC0041E3DA /* UrsusAtom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		510CA14D25CE02A00041E3DA /* Parity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA14C25CE02A00041E3DA /* Parity.swift */; };
+		510CA18D25CE033B0041E3DA /* PatQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18825CE033B0041E3DA /* PatQ.swift */; };
+		510CA18E25CE033B0041E3DA /* PatUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18925CE033B0041E3DA /* PatUV.swift */; };
+		510CA18F25CE033B0041E3DA /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 510CA18A25CE033B0041E3DA /* Extensions */; };
+		510CA19025CE033B0041E3DA /* PatP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18B25CE033B0041E3DA /* PatP.swift */; };
+		510CA19125CE033B0041E3DA /* Aura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18C25CE033B0041E3DA /* Aura.swift */; };
+		510CA1B525CE03AB0041E3DA /* UrsusPhoneticBase in Resources */ = {isa = PBXBuildFile; fileRef = 510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */; };
+		510CA28C25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */; };
+		510CA29025CE06B20041E3DA /* PhoneticBasePrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */; };
+		510CA29425CE06B70041E3DA /* PhoneticBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA29325CE06B70041E3DA /* PhoneticBaseParser.swift */; };
+		510CA29825CE06BB0041E3DA /* PhoneticBaseSuffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA29725CE06BB0041E3DA /* PhoneticBaseSuffix.swift */; };
+		510CA29C25CE06BE0041E3DA /* PhoneticBaseSyllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA29B25CE06BE0041E3DA /* PhoneticBaseSyllable.swift */; };
+		510CA2A025CE06C10041E3DA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA29F25CE06C10041E3DA /* String+Extensions.swift */; };
+		510CA2A425CE06E40041E3DA /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510CA11625CE02860041E3DA /* BigInt.framework */; };
+		510CA2DC25CE07D20041E3DA /* MurmurHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510CA26D25CE05B70041E3DA /* MurmurHash.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		510CA0AF25CE00AC0041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA09B25CE00AC0041E3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510CA0A325CE00AC0041E3DA;
+			remoteInfo = UrsusAtom;
+		};
+		510CA11525CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AB21C8F80020050DDA9;
+			remoteInfo = "BigInt-iOS";
+		};
+		510CA11725CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AD41C8F88F20050DDA9;
+			remoteInfo = "BigInt-macOS";
+		};
+		510CA11925CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AF11C8F8BE00050DDA9;
+			remoteInfo = "BigInt-watchOS";
+		};
+		510CA11B25CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AFE1C8F8CBB0050DDA9;
+			remoteInfo = "BigInt-tvOS";
+		};
+		510CA11D25CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55ABC1C8F80020050DDA9;
+			remoteInfo = "BigInt iOS Tests";
+		};
+		510CA11F25CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55ADD1C8F88F20050DDA9;
+			remoteInfo = "BigInt macOS Tests";
+		};
+		510CA12125CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55B071C8F8CBB0050DDA9;
+			remoteInfo = "BigInt tvOS Tests";
+		};
+		510CA12325CE02860041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB241C6A1DDB70B00067F917;
+			remoteInfo = "BigInt Benchmark";
+		};
+		510CA26C25CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 029CB1F7220A9D6C00FA2648;
+			remoteInfo = "MurmurHash-iOS";
+		};
+		510CA26E25CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0290FBC1220C01610076E82F;
+			remoteInfo = "MurmurHash-macOS";
+		};
+		510CA27025CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E3D40B222114F8B00A66B74;
+			remoteInfo = "MurmurHash-tvOS";
+		};
+		510CA27225CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 029CB20A220ACBD200FA2648;
+			remoteInfo = "MurmurHashTests-iOS";
+		};
+		510CA27425CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0290FBCE220C03F40076E82F;
+			remoteInfo = "MurmurHashTests-macOS";
+		};
+		510CA27625CE05B70041E3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E3D40BA22114F8B00A66B74;
+			remoteInfo = "MurmurHashTests-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UrsusAtom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510CA0A725CE00AC0041E3DA /* UrsusAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrsusAtom.h; sourceTree = "<group>"; };
+		510CA0A825CE00AC0041E3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510CA0AD25CE00AC0041E3DA /* UrsusAtomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrsusAtomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		510CA0B225CE00AC0041E3DA /* UrsusAtomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrsusAtomTests.swift; sourceTree = "<group>"; };
+		510CA0B425CE00AC0041E3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510CA10A25CE02860041E3DA /* BigInt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BigInt.xcodeproj; path = ../Submodules/BigInt/BigInt.xcodeproj; sourceTree = "<group>"; };
+		510CA14C25CE02A00041E3DA /* Parity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parity.swift; path = ../Submodules/Parity/Parity.swift; sourceTree = "<group>"; };
+		510CA18825CE033B0041E3DA /* PatQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatQ.swift; path = ../../Sources/UrsusAtom/PatQ.swift; sourceTree = "<group>"; };
+		510CA18925CE033B0041E3DA /* PatUV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatUV.swift; path = ../../Sources/UrsusAtom/PatUV.swift; sourceTree = "<group>"; };
+		510CA18A25CE033B0041E3DA /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = ../../Sources/UrsusAtom/Extensions; sourceTree = "<group>"; };
+		510CA18B25CE033B0041E3DA /* PatP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatP.swift; path = ../../Sources/UrsusAtom/PatP.swift; sourceTree = "<group>"; };
+		510CA18C25CE033B0041E3DA /* Aura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aura.swift; path = ../../Sources/UrsusAtom/Aura.swift; sourceTree = "<group>"; };
+		510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UrsusPhoneticBase; path = ../../Sources/UrsusPhoneticBase; sourceTree = "<group>"; };
+		510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MurmurHash.xcodeproj; path = "../Submodules/MurmurHash-Swift/MurmurHash.xcodeproj"; sourceTree = "<group>"; };
+		510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBaseObfuscator.swift; sourceTree = "<group>"; };
+		510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBasePrefix.swift; sourceTree = "<group>"; };
+		510CA29325CE06B70041E3DA /* PhoneticBaseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBaseParser.swift; sourceTree = "<group>"; };
+		510CA29725CE06BB0041E3DA /* PhoneticBaseSuffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBaseSuffix.swift; sourceTree = "<group>"; };
+		510CA29B25CE06BE0041E3DA /* PhoneticBaseSyllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBaseSyllable.swift; sourceTree = "<group>"; };
+		510CA29F25CE06C10041E3DA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		510CA0A125CE00AC0041E3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA2DC25CE07D20041E3DA /* MurmurHash.framework in Frameworks */,
+				510CA2A425CE06E40041E3DA /* BigInt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510CA0AA25CE00AC0041E3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA0AE25CE00AC0041E3DA /* UrsusAtom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		510CA09A25CE00AC0041E3DA = {
+			isa = PBXGroup;
+			children = (
+				510CA0A625CE00AC0041E3DA /* UrsusAtom */,
+				510CA14C25CE02A00041E3DA /* Parity.swift */,
+				510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */,
+				510CA10A25CE02860041E3DA /* BigInt.xcodeproj */,
+				510CA0B125CE00AC0041E3DA /* UrsusAtomTests */,
+				510CA0A525CE00AC0041E3DA /* Products */,
+				510CA2A325CE06E40041E3DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		510CA0A525CE00AC0041E3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */,
+				510CA0AD25CE00AC0041E3DA /* UrsusAtomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		510CA0A625CE00AC0041E3DA /* UrsusAtom */ = {
+			isa = PBXGroup;
+			children = (
+				510CA29F25CE06C10041E3DA /* String+Extensions.swift */,
+				510CA29B25CE06BE0041E3DA /* PhoneticBaseSyllable.swift */,
+				510CA29725CE06BB0041E3DA /* PhoneticBaseSuffix.swift */,
+				510CA29325CE06B70041E3DA /* PhoneticBaseParser.swift */,
+				510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */,
+				510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */,
+				510CA18C25CE033B0041E3DA /* Aura.swift */,
+				510CA18A25CE033B0041E3DA /* Extensions */,
+				510CA18B25CE033B0041E3DA /* PatP.swift */,
+				510CA18825CE033B0041E3DA /* PatQ.swift */,
+				510CA18925CE033B0041E3DA /* PatUV.swift */,
+				510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */,
+				510CA0A725CE00AC0041E3DA /* UrsusAtom.h */,
+				510CA0A825CE00AC0041E3DA /* Info.plist */,
+			);
+			path = UrsusAtom;
+			sourceTree = "<group>";
+		};
+		510CA0B125CE00AC0041E3DA /* UrsusAtomTests */ = {
+			isa = PBXGroup;
+			children = (
+				510CA0B225CE00AC0041E3DA /* UrsusAtomTests.swift */,
+				510CA0B425CE00AC0041E3DA /* Info.plist */,
+			);
+			path = UrsusAtomTests;
+			sourceTree = "<group>";
+		};
+		510CA10B25CE02860041E3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				510CA11625CE02860041E3DA /* BigInt.framework */,
+				510CA11825CE02860041E3DA /* BigInt.framework */,
+				510CA11A25CE02860041E3DA /* BigInt.framework */,
+				510CA11C25CE02860041E3DA /* BigInt.framework */,
+				510CA11E25CE02860041E3DA /* BigInt-Test.xctest */,
+				510CA12025CE02860041E3DA /* BigInt-Test.xctest */,
+				510CA12225CE02860041E3DA /* BigInt-Test.xctest */,
+				510CA12425CE02860041E3DA /* BigInt Benchmark.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		510CA26425CE05B70041E3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				510CA26D25CE05B70041E3DA /* MurmurHash.framework */,
+				510CA26F25CE05B70041E3DA /* MurmurHash.framework */,
+				510CA27125CE05B70041E3DA /* MurmurHash.framework */,
+				510CA27325CE05B70041E3DA /* MurmurHashTests-iOS.xctest */,
+				510CA27525CE05B70041E3DA /* MurmurHashTests-macOS.xctest */,
+				510CA27725CE05B70041E3DA /* MurmurHashTests-tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		510CA2A325CE06E40041E3DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		510CA09F25CE00AC0041E3DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA0B525CE00AC0041E3DA /* UrsusAtom.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		510CA0A325CE00AC0041E3DA /* UrsusAtom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510CA0B825CE00AC0041E3DA /* Build configuration list for PBXNativeTarget "UrsusAtom" */;
+			buildPhases = (
+				510CA09F25CE00AC0041E3DA /* Headers */,
+				510CA0A025CE00AC0041E3DA /* Sources */,
+				510CA0A125CE00AC0041E3DA /* Frameworks */,
+				510CA0A225CE00AC0041E3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UrsusAtom;
+			productName = UrsusAtom;
+			productReference = 510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		510CA0AC25CE00AC0041E3DA /* UrsusAtomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510CA0BB25CE00AC0041E3DA /* Build configuration list for PBXNativeTarget "UrsusAtomTests" */;
+			buildPhases = (
+				510CA0A925CE00AC0041E3DA /* Sources */,
+				510CA0AA25CE00AC0041E3DA /* Frameworks */,
+				510CA0AB25CE00AC0041E3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				510CA0B025CE00AC0041E3DA /* PBXTargetDependency */,
+			);
+			name = UrsusAtomTests;
+			productName = UrsusAtomTests;
+			productReference = 510CA0AD25CE00AC0041E3DA /* UrsusAtomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		510CA09B25CE00AC0041E3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					510CA0A325CE00AC0041E3DA = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					510CA0AC25CE00AC0041E3DA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 510CA09E25CE00AC0041E3DA /* Build configuration list for PBXProject "UrsusAtom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 510CA09A25CE00AC0041E3DA;
+			productRefGroup = 510CA0A525CE00AC0041E3DA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 510CA10B25CE02860041E3DA /* Products */;
+					ProjectRef = 510CA10A25CE02860041E3DA /* BigInt.xcodeproj */;
+				},
+				{
+					ProductGroup = 510CA26425CE05B70041E3DA /* Products */;
+					ProjectRef = 510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				510CA0A325CE00AC0041E3DA /* UrsusAtom */,
+				510CA0AC25CE00AC0041E3DA /* UrsusAtomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		510CA11625CE02860041E3DA /* BigInt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BigInt.framework;
+			remoteRef = 510CA11525CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA11825CE02860041E3DA /* BigInt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BigInt.framework;
+			remoteRef = 510CA11725CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA11A25CE02860041E3DA /* BigInt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BigInt.framework;
+			remoteRef = 510CA11925CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA11C25CE02860041E3DA /* BigInt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BigInt.framework;
+			remoteRef = 510CA11B25CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA11E25CE02860041E3DA /* BigInt-Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "BigInt-Test.xctest";
+			remoteRef = 510CA11D25CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA12025CE02860041E3DA /* BigInt-Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "BigInt-Test.xctest";
+			remoteRef = 510CA11F25CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA12225CE02860041E3DA /* BigInt-Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "BigInt-Test.xctest";
+			remoteRef = 510CA12125CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA12425CE02860041E3DA /* BigInt Benchmark.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "BigInt Benchmark.xctest";
+			remoteRef = 510CA12325CE02860041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA26D25CE05B70041E3DA /* MurmurHash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MurmurHash.framework;
+			remoteRef = 510CA26C25CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA26F25CE05B70041E3DA /* MurmurHash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MurmurHash.framework;
+			remoteRef = 510CA26E25CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA27125CE05B70041E3DA /* MurmurHash.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MurmurHash.framework;
+			remoteRef = 510CA27025CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA27325CE05B70041E3DA /* MurmurHashTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MurmurHashTests-iOS.xctest";
+			remoteRef = 510CA27225CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA27525CE05B70041E3DA /* MurmurHashTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MurmurHashTests-macOS.xctest";
+			remoteRef = 510CA27425CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		510CA27725CE05B70041E3DA /* MurmurHashTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MurmurHashTests-tvOS.xctest";
+			remoteRef = 510CA27625CE05B70041E3DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		510CA0A225CE00AC0041E3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA1B525CE03AB0041E3DA /* UrsusPhoneticBase in Resources */,
+				510CA18F25CE033B0041E3DA /* Extensions in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510CA0AB25CE00AC0041E3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		510CA0A025CE00AC0041E3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA2A025CE06C10041E3DA /* String+Extensions.swift in Sources */,
+				510CA29C25CE06BE0041E3DA /* PhoneticBaseSyllable.swift in Sources */,
+				510CA29825CE06BB0041E3DA /* PhoneticBaseSuffix.swift in Sources */,
+				510CA29425CE06B70041E3DA /* PhoneticBaseParser.swift in Sources */,
+				510CA28C25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift in Sources */,
+				510CA29025CE06B20041E3DA /* PhoneticBasePrefix.swift in Sources */,
+				510CA19125CE033B0041E3DA /* Aura.swift in Sources */,
+				510CA18E25CE033B0041E3DA /* PatUV.swift in Sources */,
+				510CA14D25CE02A00041E3DA /* Parity.swift in Sources */,
+				510CA19025CE033B0041E3DA /* PatP.swift in Sources */,
+				510CA18D25CE033B0041E3DA /* PatQ.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510CA0A925CE00AC0041E3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA0B325CE00AC0041E3DA /* UrsusAtomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		510CA0B025CE00AC0041E3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510CA0A325CE00AC0041E3DA /* UrsusAtom */;
+			targetProxy = 510CA0AF25CE00AC0041E3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		510CA0B625CE00AC0041E3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		510CA0B725CE00AC0041E3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		510CA0B925CE00AC0041E3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UrsusAtom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tlon.UrsusAtom;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		510CA0BA25CE00AC0041E3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UrsusAtom/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tlon.UrsusAtom;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		510CA0BC25CE00AC0041E3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UrsusAtomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tlon.UrsusAtomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		510CA0BD25CE00AC0041E3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UrsusAtomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tlon.UrsusAtomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		510CA09E25CE00AC0041E3DA /* Build configuration list for PBXProject "UrsusAtom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510CA0B625CE00AC0041E3DA /* Debug */,
+				510CA0B725CE00AC0041E3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510CA0B825CE00AC0041E3DA /* Build configuration list for PBXNativeTarget "UrsusAtom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510CA0B925CE00AC0041E3DA /* Debug */,
+				510CA0BA25CE00AC0041E3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510CA0BB25CE00AC0041E3DA /* Build configuration list for PBXNativeTarget "UrsusAtomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510CA0BC25CE00AC0041E3DA /* Debug */,
+				510CA0BD25CE00AC0041E3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 510CA09B25CE00AC0041E3DA /* Project object */;
+}
