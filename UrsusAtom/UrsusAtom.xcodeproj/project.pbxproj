@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5107806A25CE13F7001053AF /* PatUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107806625CE13F7001053AF /* PatUV.swift */; };
+		5107806B25CE13F7001053AF /* PatQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107806725CE13F7001053AF /* PatQ.swift */; };
+		5107806C25CE13F7001053AF /* PatP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107806825CE13F7001053AF /* PatP.swift */; };
+		5107806D25CE13F7001053AF /* Aura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107806925CE13F7001053AF /* Aura.swift */; };
 		510CA0AE25CE00AC0041E3DA /* UrsusAtom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */; };
 		510CA0B325CE00AC0041E3DA /* UrsusAtomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA0B225CE00AC0041E3DA /* UrsusAtomTests.swift */; };
 		510CA0B525CE00AC0041E3DA /* UrsusAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = 510CA0A725CE00AC0041E3DA /* UrsusAtom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		510CA14D25CE02A00041E3DA /* Parity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA14C25CE02A00041E3DA /* Parity.swift */; };
-		510CA18D25CE033B0041E3DA /* PatQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18825CE033B0041E3DA /* PatQ.swift */; };
-		510CA18E25CE033B0041E3DA /* PatUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18925CE033B0041E3DA /* PatUV.swift */; };
-		510CA18F25CE033B0041E3DA /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 510CA18A25CE033B0041E3DA /* Extensions */; };
-		510CA19025CE033B0041E3DA /* PatP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18B25CE033B0041E3DA /* PatP.swift */; };
-		510CA19125CE033B0041E3DA /* Aura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA18C25CE033B0041E3DA /* Aura.swift */; };
-		510CA1B525CE03AB0041E3DA /* UrsusPhoneticBase in Resources */ = {isa = PBXBuildFile; fileRef = 510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */; };
 		510CA28C25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */; };
 		510CA29025CE06B20041E3DA /* PhoneticBasePrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */; };
 		510CA29425CE06B70041E3DA /* PhoneticBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CA29325CE06B70041E3DA /* PhoneticBaseParser.swift */; };
@@ -136,6 +134,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5107806625CE13F7001053AF /* PatUV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatUV.swift; sourceTree = "<group>"; };
+		5107806725CE13F7001053AF /* PatQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatQ.swift; sourceTree = "<group>"; };
+		5107806825CE13F7001053AF /* PatP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatP.swift; sourceTree = "<group>"; };
+		5107806925CE13F7001053AF /* Aura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aura.swift; sourceTree = "<group>"; };
 		510CA0A425CE00AC0041E3DA /* UrsusAtom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UrsusAtom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		510CA0A725CE00AC0041E3DA /* UrsusAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrsusAtom.h; sourceTree = "<group>"; };
 		510CA0A825CE00AC0041E3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,12 +146,6 @@
 		510CA0B425CE00AC0041E3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510CA10A25CE02860041E3DA /* BigInt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BigInt.xcodeproj; path = ../Submodules/BigInt/BigInt.xcodeproj; sourceTree = "<group>"; };
 		510CA14C25CE02A00041E3DA /* Parity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parity.swift; path = ../Submodules/Parity/Parity.swift; sourceTree = "<group>"; };
-		510CA18825CE033B0041E3DA /* PatQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatQ.swift; path = ../../Sources/UrsusAtom/PatQ.swift; sourceTree = "<group>"; };
-		510CA18925CE033B0041E3DA /* PatUV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatUV.swift; path = ../../Sources/UrsusAtom/PatUV.swift; sourceTree = "<group>"; };
-		510CA18A25CE033B0041E3DA /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = ../../Sources/UrsusAtom/Extensions; sourceTree = "<group>"; };
-		510CA18B25CE033B0041E3DA /* PatP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatP.swift; path = ../../Sources/UrsusAtom/PatP.swift; sourceTree = "<group>"; };
-		510CA18C25CE033B0041E3DA /* Aura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aura.swift; path = ../../Sources/UrsusAtom/Aura.swift; sourceTree = "<group>"; };
-		510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UrsusPhoneticBase; path = ../../Sources/UrsusPhoneticBase; sourceTree = "<group>"; };
 		510CA26325CE05B70041E3DA /* MurmurHash.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MurmurHash.xcodeproj; path = "../Submodules/MurmurHash-Swift/MurmurHash.xcodeproj"; sourceTree = "<group>"; };
 		510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBaseObfuscator.swift; sourceTree = "<group>"; };
 		510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticBasePrefix.swift; sourceTree = "<group>"; };
@@ -211,12 +207,10 @@
 				510CA29325CE06B70041E3DA /* PhoneticBaseParser.swift */,
 				510CA28F25CE06B20041E3DA /* PhoneticBasePrefix.swift */,
 				510CA28B25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift */,
-				510CA18C25CE033B0041E3DA /* Aura.swift */,
-				510CA18A25CE033B0041E3DA /* Extensions */,
-				510CA18B25CE033B0041E3DA /* PatP.swift */,
-				510CA18825CE033B0041E3DA /* PatQ.swift */,
-				510CA18925CE033B0041E3DA /* PatUV.swift */,
-				510CA1A625CE03AB0041E3DA /* UrsusPhoneticBase */,
+				5107806925CE13F7001053AF /* Aura.swift */,
+				5107806825CE13F7001053AF /* PatP.swift */,
+				5107806725CE13F7001053AF /* PatQ.swift */,
+				5107806625CE13F7001053AF /* PatUV.swift */,
 				510CA0A725CE00AC0041E3DA /* UrsusAtom.h */,
 				510CA0A825CE00AC0041E3DA /* Info.plist */,
 			);
@@ -470,8 +464,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510CA1B525CE03AB0041E3DA /* UrsusPhoneticBase in Resources */,
-				510CA18F25CE033B0041E3DA /* Extensions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,15 +483,15 @@
 			files = (
 				510CA2A025CE06C10041E3DA /* String+Extensions.swift in Sources */,
 				510CA29C25CE06BE0041E3DA /* PhoneticBaseSyllable.swift in Sources */,
+				5107806D25CE13F7001053AF /* Aura.swift in Sources */,
 				510CA29825CE06BB0041E3DA /* PhoneticBaseSuffix.swift in Sources */,
 				510CA29425CE06B70041E3DA /* PhoneticBaseParser.swift in Sources */,
 				510CA28C25CE06AF0041E3DA /* PhoneticBaseObfuscator.swift in Sources */,
 				510CA29025CE06B20041E3DA /* PhoneticBasePrefix.swift in Sources */,
-				510CA19125CE033B0041E3DA /* Aura.swift in Sources */,
-				510CA18E25CE033B0041E3DA /* PatUV.swift in Sources */,
+				5107806A25CE13F7001053AF /* PatUV.swift in Sources */,
+				5107806B25CE13F7001053AF /* PatQ.swift in Sources */,
+				5107806C25CE13F7001053AF /* PatP.swift in Sources */,
 				510CA14D25CE02A00041E3DA /* Parity.swift in Sources */,
-				510CA19025CE033B0041E3DA /* PatP.swift in Sources */,
-				510CA18D25CE033B0041E3DA /* PatQ.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
